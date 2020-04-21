@@ -3,7 +3,7 @@ const MyReact = (function() {
 
     return {
       render(Component) {
-        const Comp = Component();
+        const Comp = Component(); 
 
         Comp.render();
 
