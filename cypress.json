@@ -1,0 +1,8 @@
+{
+    "baseUrl": "http://localhost:8080",
+    "testFiles": "**/*.cy.js",
+    "integrationFolder": "src/",
+    "viewportHeight": 768,
+    "viewportWidth": 1366,
+    "video": false
+}
