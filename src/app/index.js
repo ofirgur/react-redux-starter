@@ -11,7 +11,7 @@ import AppLayout from 'layout';
 import 'interview';
 //
 
-export default () => {
+export default () => { 
     return (
         <Provider store={store}>
             <ThemeProvider theme={theme}>
