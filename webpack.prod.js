@@ -9,7 +9,7 @@ module.exports = merge(common, {
   mode: "production",
   output: {
     filename: "main.[hash].js", // use hash only in prod
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "build")
   },
   plugins: [
     new HtmlWebpackPlugin({

@@ -1,8 +1,8 @@
 node_modules
 
-#dist folder
-/dist
-dist-*
+#build folder
+/build
+build-*
 
 #VSCode metadata
 .vscode

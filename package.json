@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "cross-env webpack-dev-server --config webpack.dev.js --open",
     "start": "npm run dev --mock",
-    "build": "rm -rf dist && webpack --config webpack.prod.js",
-    "build:mock": "rm -rf dist && webpack --config webpack.prod.js --mock",
+    "build": "rm -rf build && webpack --config webpack.prod.js",
+    "build:mock": "rm -rf build && webpack --config webpack.prod.js --mock",
     "clean": "rm -rf ./node_modules",
     "stats": "npm run build --stats=true",
     "test": "jest",
