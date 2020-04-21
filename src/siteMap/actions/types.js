@@ -1,0 +1,2 @@
+export const SITE_ROUTES_NORMALIZE = '@@siteMap/SITE_ROUTES_NORMALIZE'; 
+export const CURRENT_ROUTE_CHANGE = '@@siteMap/CURRENT_ROUTE_CHANGE'; 

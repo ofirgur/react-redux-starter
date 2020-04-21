@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SkeletonLoading component it should mock the context and render correctly 1`] = `
+<styled.div
+  className="skeleton-loading"
+/>
+`;
+
+exports[`SkeletonLoading component it should styled correctly 1`] = `
+.c0 {
+  width: auto;
+  height: 14px;
+  -webkit-animation: ZQpsg 1s linear infinite forwards;
+  animation: ZQpsg 1s linear infinite forwards;
+  -webkit-animation-name: ZQpsg;
+  animation-name: ZQpsg;
+  background: #e4e7ed;
+  border-radius: 4px;
+  background-image: -webkit-linear-gradient( left, #e4e7ed 0%, #c3cad9 20%, #e4e7ed 40%, #e4e7ed 100% );
+  background-size: 980px 898px;
+  position: relative;
+}
+
+<div
+  className="c0"
+/>
+`;

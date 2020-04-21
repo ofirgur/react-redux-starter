@@ -1,0 +1,18 @@
+# node_modules ignored by default
+
+# ignore json
+**/*.json
+**/*._js
+**/*.snap
+
+# webpack ignore
+webpack.*.js
+
+# ignore mocks
+**/*mocks*
+
+# ignore unit tests & reports
+**/*.spec.js
+**/*.test.js
+**/*.ui-test.js
+ui-test/

@@ -1,0 +1,41 @@
+{
+    "id": 1,
+    "name": "Ofir Gur",
+    "username": "ofirgur@yahoo.com",
+    "email": "ofirgur@yahoo.com",
+    "address": {
+        "street": "Golda Meir 15",
+        "suite": "Apt. 17",
+        "city": "Hod Hasharon",
+        "zipcode": "92998-3874"
+    },
+    "phone": "+972 507869741",
+    "assets": {
+        "namespaces": {
+            "layout": {
+                "resources": {
+                    "en": {
+                        "Home.Text": "Home",
+                        "Modules.Text": "Modules",
+                        "I18N.Text": "I18N",
+                        "Forms.Text": "Forms",
+                        "React.Text": "React",
+                        "TestModule.Text": "Test Module",
+                        "JavaScript.Text": "Java Script"
+                    },
+                    "he": {
+                        "Home.Text": "בית",
+                        "Modules.Text": "מודולים",
+                        "I18N.Text": "לוקליזציה",
+                        "Forms.Text": "טפסים",
+                        "React.Text": "ריאקט",
+                        "TestModule.Text": "מודול ניסוי",
+                        "JavaScript.Text": "ג'אוה סקריפט"
+                    }
+                }
+            }
+        }
+    },
+    "direction": "ltr",
+    "lang": "en"
+}

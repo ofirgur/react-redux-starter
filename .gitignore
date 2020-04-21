@@ -1,0 +1,11 @@
+node_modules
+
+#dist folder
+/dist
+dist-*
+
+#VSCode metadata
+.vscode
+
+# Mac files
+.DS_Store

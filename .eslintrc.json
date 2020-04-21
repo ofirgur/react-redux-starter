@@ -1,0 +1,41 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "cy": false,
+        "Cypress": false
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+        "quotes": 0,
+        "semi": [1, "always"],
+        "no-console": 0,
+        "no-debugger": 1,
+        "no-alert": 2,
+        "no-unused-vars": 1,
+        "no-undef": 0,
+        "no-prototype-builtins": 0,
+        "no-fallthrough": 0,
+
+        "react/display-name": 0,
+        "react/jsx-no-duplicate-props": 1,
+        "react/jsx-no-undef": 0,
+        "react/prop-types": 0,
+        "react/self-closing-comp": 1
+    }
+}

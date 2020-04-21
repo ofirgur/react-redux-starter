@@ -1,0 +1,14 @@
+{
+    "id": 1,
+    "name": "Ofir Gur",
+    "username": "ofirgur@yahoo.com",
+    "email": "ofirgur@yahoo.com",
+    "address": {
+        "street": "Golda Meir 15",
+        "suite": "Apt. 17",
+        "city": "Hod Hasharon",
+        "zipcode": "92998-3874"
+    },
+    "phone": "+972 507869741",
+    "locale": "en"
+}

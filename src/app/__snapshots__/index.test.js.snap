@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render correctlly 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <ThemeProvider
+    theme={
+      Object {
+        "background": Object {
+          "body": "#263238",
+          "main": "#607d8b",
+          "mainHover": "#78909C",
+        },
+        "breakpoint": Object {
+          "lg": "1280px",
+          "md": "960px",
+          "sm": "600px",
+          "xl": "1920px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "hoveredLink": "#004D40",
+          "link": "#00695C",
+          "main": "#fff",
+          "purple": "#651fff",
+          "red": "#ff7043",
+        },
+        "direction": Object {
+          "ltr": "ltr",
+          "rtl": "rtl",
+        },
+        "margin": Object {
+          "main": "16px",
+        },
+        "padding": Object {
+          "main": "16px",
+          "mobile": "6px",
+        },
+        "shadow": Object {
+          "main": "0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12)",
+        },
+        "typography": Object {
+          "fontFamily": "Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontSize": "16px",
+          "mobileFontSize": "10px",
+        },
+        "zIndex": Object {},
+      }
+    }
+  >
+    <Connect(ConnectedRouterWithContext)
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <GlobalStyleComponent />
+      <Layout />
+    </Connect(ConnectedRouterWithContext)>
+  </ThemeProvider>
+</Provider>
+`;
+
+exports[`App should styled correctly 1`] = `
+.c0 {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<div
+  className="c0"
+>
+  <span>
+    Loading...
+  </span>
+</div>
+`;
