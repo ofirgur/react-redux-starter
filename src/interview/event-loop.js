@@ -59,5 +59,15 @@ For this reason, the second argument indicates a minimum time—not a guaranteed
 
 Here is an example that demonstrates this concept (setTimeout does not run immediately after its timer expires):
 
+***Zero delays
+Zero delay doesn't actually mean the call back will fire-off after zero milliseconds. Calling setTimeout with a delay of 0 (zero) milliseconds doesn't execute the callback function after the given interval.
 
+The execution depends on the number of waiting tasks in the queue. In the example below, the message ''this is just a message'' will be written to the console before the message in the callback gets processed, because the delay is the minimum time required for the runtime to process the request (not a guaranteed time).
+
+Basically, the setTimeout needs to wait for all the code for queued messages to complete even though you specified a particular time limit for your setTimeout.
+
+Never blocking
+A very interesting property of the event loop model is that JavaScript, unlike a lot of other languages, never blocks. Handling I/O is typically performed via events and callbacks, so when the application is waiting for an IndexedDB query to return or an XHR request to return, it can still process other things like user input.
+
+Legacy exceptions exist like alert or synchronous XHR, but it is considered a good practice to avoid them. Beware: exceptions to the exception do exist (but are usually implementation bugs, rather than anything else).
 */
