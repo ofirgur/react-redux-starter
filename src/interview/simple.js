@@ -95,7 +95,7 @@ function buildFunction(n) {
             });
         })(i);
 
-        or es6 let
+        or es6 let i
         */
     }
 
@@ -107,26 +107,6 @@ var fs = buildFunction(n);
 for(var i = 0; i < n; i++) {
     fs[i]();
 }
-
-// 10. What is the value of x in each case?
-var x = 7; // global scope
-
-(function func1() {
-    try {
-        console.log('x: ', this.x);
-    } catch {
-        console.log('this is undefined');
-    } 
-}).call(this);
-
-const func2 = () => {
-    try {
-        console.log(this.x);
-    } catch {
-        console.log('this is undefined');
-    } 
-};
-func2();
   
 const obj = {
     x: 3,
@@ -148,15 +128,13 @@ const obj = {
         })();
     },
     func4: function(){
-        const func5 = () => {
+        (() => {
             try {
                 console.log(this.x);
             } catch {
                 console.log('this is undefined');
             }          
-        };
-        
-        func5();
+        })();
     }
 };
 
