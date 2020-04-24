@@ -1,6 +1,7 @@
 import './MyPromise';
 import './algorithms';
 import './binaryTree';
+import './binaryHeap';
 import './simple';
 
 /** 1
