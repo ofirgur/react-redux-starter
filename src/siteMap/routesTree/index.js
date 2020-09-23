@@ -8,6 +8,13 @@ export default {
     icon: 'home',
     childRoutes: [
         {
+            key: 'MaterialUI',
+            name: 'materialui',
+            pathname: '/materialui',
+            title: 'MaterialUI.Text',
+            icon: 'view_module'
+        },
+        {
             key: 'Modules',
             name: 'modules',
             pathname: '/modules',

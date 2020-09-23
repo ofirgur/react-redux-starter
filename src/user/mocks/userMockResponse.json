@@ -16,6 +16,7 @@
                 "resources": {
                     "en": {
                         "Home.Text": "Home",
+                        "MaterialUI.Text": "Material UI",
                         "Modules.Text": "Modules",
                         "I18N.Text": "I18N",
                         "Forms.Text": "Forms",
@@ -25,6 +26,7 @@
                     },
                     "he": {
                         "Home.Text": "בית",
+                        "MaterialUI.Text": "גוגל מטריאל",
                         "Modules.Text": "מודולים",
                         "I18N.Text": "לוקליזציה",
                         "Forms.Text": "טפסים",

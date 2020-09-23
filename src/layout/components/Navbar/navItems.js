@@ -1,11 +1,14 @@
 import { siteRoutes } from 'siteMap';
 
-const { home, modules, localization, forms, react, javascript } = siteRoutes;
+const { home, materialui, modules, localization, forms, react, javascript } = siteRoutes;
 
 export default [
     {
         ...home,
         childRoutes: undefined
+    },
+    {
+        ...materialui
     },
     {
         ...modules
