@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-
+import Icon from '@material-ui/core/Icon';
 import { useNavListContext } from '../../../context';
 import NavbarListItemContainer, { DropDownList } from './style';
 
@@ -19,9 +19,9 @@ const NavbarListItem = ({ item }) => {
             return (
                 <>
                     <div className="drop-down-item" onClick={() => setOpen(!open)} >
-                        <i className="material-icons">{icon}</i>
+                        <Icon>{icon}</Icon>
                         <span>{title}</span>
-                        <i className="material-icons">{arrow}</i>
+                        <Icon>{arrow}</Icon>
                     </div>
                     <DropDownList className="drop-down-list" open={open}>
                         {childRoutes.map((childRoute, index) => <NavbarListItem key={index} item={{ ...childRoute, childRoutes: undefined }} isActive={isActive} />)}
@@ -32,7 +32,7 @@ const NavbarListItem = ({ item }) => {
         
         return (
             <Link className="link-button" to={pathname} onClick={onClick}>
-                <i className="material-icons">{icon}</i>
+                <Icon>{icon}</Icon>
                 <span>{title}</span>
             </Link>
         );

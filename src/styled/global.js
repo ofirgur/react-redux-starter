@@ -42,5 +42,9 @@ export default createGlobalStyle`
                 text-decoration: underline;
             }
         }
+
+        .material-icons {
+            padding: 0 !important;
+        }
     }
 `;

@@ -11,7 +11,7 @@ export default styled.div`
         height: 60px;
         cursor: pointer;
 
-        > i { color: ${p => p.theme.color.main} }
+        > .material-icons { color: ${p => p.theme.color.main} }
 
         > span { padding: 0 ${p => p.theme.padding.main}; }
 
