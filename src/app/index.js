@@ -7,10 +7,6 @@ import store, { history } from 'store';
 import { GlobalStyle, theme } from 'styled';
 import AppLayout from 'layout';
 
-//
-import 'interview';
-//
-
 export default () => { 
     return (
         <Provider store={store}>
