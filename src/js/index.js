@@ -24,7 +24,19 @@ export const onFulfilled3 = value => {
     //return value * 3;
 }
 
-
+MyPromise.resolve('Success').then(value => {
+        console.log('MyPromise.resolve value', value);
+    });    
+    
+MyPromise.reject('Failure').catch(err => {
+        console.log('MyPromise.reject err', err);
+    });  
+    
+MyPromise.all([
+    new MyPromise(resolve => setTimeout(resolve, 500, 'Hello')),
+    100,
+    MyPromise.resolve('World')
+]).then(values => console.log('MyPromise.all values: ', values));
 
 const myPromise = new MyPromise(executor);
 myPromise

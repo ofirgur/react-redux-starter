@@ -49,12 +49,22 @@ class MyPromise {
         }
     }
 
-    static resolve = res => {
+    static resolve( res) {
         return new MyPromise(resolve => resolve(res));
     }
 
-    static reject = err => {
+    static reject(err) {
         return new MyPromise((_, reject) => reject(err));
+    }
+
+    static all(values) {
+        return values.reduce((accumulator, value) => {
+            return accumulator.then(results => {
+                return MyPromise.resolve(value).then(result => {
+                    return [...results, result];
+                });
+            });
+        }, MyPromise.resolve([]));
     }
 
     then(onFulfilled, onRejected) {
@@ -88,6 +98,24 @@ class MyPromise {
                 this.$chained.push({ onFulfilled: _onFulfilled, onRejected: _onRejected });
             }
         });
+    }
+
+    catch(onRejected) {
+        return new MyPromise((_, reject) => {
+            const _onRejected = err => {
+                try{
+                    reject(onRejected(err));
+                } catch(_err) {
+                    reject(_err);
+                }
+            }
+
+            if(this.$state === states.FULFILLED || this.$state === states.REJECTED){
+                _onRejected(this.$value);
+            } else {
+                this.$chained.push({ onRejected: _onRejected });
+            }
+        })
     }
 }
 
